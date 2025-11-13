@@ -15,7 +15,9 @@ The full pipeline of our microbiome analysis is attached in `Protozoan_Coinfecti
 -Protozoan infection status prediction with an ML model
 
 # Requirements
+R version 4.5.1
 
 # Data
+`marks_ps`: phyloseq object
 
 # Citation
