@@ -1,4 +1,4 @@
-# -Insert Title Here-
+# -Co-infection with G. lamblia, C. parvum, and E. histolytica disrupts gut microbial diversity and enriches specific bacterial taxa in school-aged children-
 
 This is the official github repository for our paper: -insert appropriate link-
 
