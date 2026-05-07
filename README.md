@@ -1,4 +1,4 @@
-# Co-infection with G. lamblia, C. parvum, and E. histolytica disrupts gut microbial diversity and enriches specific bacterial taxa in school-aged children
+# Associations Between Enteric Protozoan Co-infection and Gut Microbiome Composition Among School-Aged Children in Southern Ethiopia
 
 This is the official github repository for our paper: -insert appropriate link-
 
