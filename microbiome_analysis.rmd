@@ -227,7 +227,7 @@ a_diversity_continuous <- function(ps, variable, title = variable, measures = c(
 }
 EH <- a_diversity_categorical(ps_gutMicro, variable = "EH", title = "Entamoeba histolytica")
 GL <- a_diversity_categorical(ps_gutMicro, variable = "GL", title = "Giardia lamblia")
-C <- a_diversity_categorical(ps_gutMicro, variable = "C", title = "Cryptosporidium")
+C <- a_diversity_categorical(ps_gutMicro, variable = "C", title = "Cryptosporidium parvum")
 
 EH_GL <- a_diversity_categorical(ps_gutMicro, variable = "EH_GL", title = "Entamoeba histloytica and Giardia Lamblia Coinfection")
 EH_C <- a_diversity_categorical(ps_gutMicro, variable = "EH_C", title = "Entamoeba histloytica and Cryptosporidium Coinfection")
@@ -309,7 +309,7 @@ beta_diversity_bray_plot_categorical <- function(ps, variable, title_name=variab
              label = p_text, 
              hjust = 1.1, vjust = 1.5, 
              size = 4, fontface = "bold") +
-    labs(color = paste("Kitchen Floor Material"))
+    labs(color = paste("variable"))
   
   print(pcoaplot)
   return(pcoaplot)
@@ -872,7 +872,7 @@ run_maaslin2_and_plot <- function(
 plot_all_significant_boxplots <- function(
   ps_obj, 
   maaslin2_table, 
-  variable = "FoodSecure_vs_FoodInsecure", 
+  variable = "EH", 
   variable_name = variable,
   taxlevel = "Genus"
 ) {
@@ -1253,7 +1253,7 @@ plot_top_feature_heatmap_clr <- function(
   model_results,
   n_top = 10,
   metadata_vars = NULL,
-  outcome_var = "FoodSecure_vs_FoodInsecure",
+  outcome_var = "EH",
   min_prevalence = 0.05
 ) {
   
