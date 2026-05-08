@@ -229,6 +229,12 @@ EH <- a_diversity_categorical(ps_gutMicro, variable = "EH", title = "Entamoeba h
 GL <- a_diversity_categorical(ps_gutMicro, variable = "GL", title = "Giardia lamblia")
 C <- a_diversity_categorical(ps_gutMicro, variable = "C", title = "Cryptosporidium")
 
+EH_GL <- a_diversity_categorical(ps_gutMicro, variable = "EH_GL", title = "Entamoeba histloytica and Giardia Lamblia Coinfection")
+EH_C <- a_diversity_categorical(ps_gutMicro, variable = "EH_C", title = "Entamoeba histloytica and Cryptosporidium Coinfection")
+GL_C <- a_diversity_categorical(ps_gutMicro, variable = "GL_C", title = "Giardia lamblia and Cryptosporidium Coinfection")
+EH_GL_C <- a_diversity_categorical(ps_gutMicro, variable = "EH_GL_C", title = "Entamoeba Histolytica, Giardia lamblia, and Cryptosporidium parvum Coinfection")
+ANY <- a_diversity_categorical(ps_gutMicro, variable = "ANY", title = "Any Protozoan Infection")
+
 ggsave("EH_alpha.png", plot = EH, width = 6, height = 4, dpi = 500)
 ggsave("GL_alpha.png", plot = GL, width = 6, height = 4, dpi = 500)
 ggsave("C_alpha.png", plot = C, width = 6, height = 4, dpi = 500)
@@ -240,11 +246,7 @@ ggsave("GL_C_alpha.png", plot = GL_C, width = 6, height = 4, dpi = 500)
 ggsave("EH_GL_C_alpha.png", plot = EH_GL_C, width = 6, height = 4, dpi = 500)
 
 
-EH_GL <- a_diversity_categorical(ps_gutMicro, variable = "EH_GL", title = "Entamoeba histloytica and Giardia Lamblia Coinfection")
-EH_C <- a_diversity_categorical(ps_gutMicro, variable = "EH_C", title = "Entamoeba histloytica and Cryptosporidium Coinfection")
-GL_C <- a_diversity_categorical(ps_gutMicro, variable = "GL_C", title = "Giardia lamblia and Cryptosporidium Coinfection")
-EH_GL_C <- a_diversity_categorical(ps_gutMicro, variable = "EH_GL_C", title = "Entamoeba Histolytica, Giardia lamblia, and Cryptosporidium parvum Coinfection")
-ANY <- a_diversity_categorical(ps_gutMicro, variable = "ANY", title = "Any Protozoan Infection")
+
 
 ```
 
